@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates - Nazwa Nurul Wijaya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .certificate-card {
+            transition: all 0.3s ease;
+        }
+
+        .certificate-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .certificate-image {
+            transition: transform 0.3s ease;
+        }
+
+        .certificate-card:hover .certificate-image {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="font-bold text-2xl text-blue-600">Welcome to My Profile</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+                    <a href="index.html#about" class="hover:text-blue-600 transition">About</a>
+                    <a href="index.html#skills" class="hover:text-blue-600 transition">Skills</a>
+                    <a href="index.html#experience" class="hover:text-blue-600 transition">Experience</a>
+                    <a href="portfolio.html" class="hover:text-blue-600 transition">Portfolio</a>
+                    <a href="certificates.html" class="text-blue-600 font-medium">Certificates</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white px-4 pb-4">
+            <a href="index.html" class="block py-2 hover:text-blue-600 transition">Home</a>
+            <a href="index.html#about" class="block py-2 hover:text-blue-600 transition">About</a>
+            <a href="index.html#skills" class="block py-2 hover:text-blue-600 transition">Skills</a>
+            <a href="index.html#experience" class="block py-2 hover:text-blue-600 transition">Experience</a>
+            <a href="portfolio.html" class="block py-2 hover:text-blue-600 transition">Portfolio</a>
+            <a href="certificates.html" class="block py-2 text-blue-600 font-medium">Certificates</a>
+        </div>
+    </nav>
+
+    <!-- Certificates Header -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">My Certificates & Achievements</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Professional certifications, awards, and organizational experiences that showcase my skills and
+                dedication.
+            </p>
+        </div>
+    </section>
+
+    <!-- Certificates Grid -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Certificate 1 - Accounting -->
+                <div class="certificate-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl">
+                    <div class="relative overflow-hidden">
+                        <div class="h-48 bg-gray-200 flex items-center justify-center certificate-image">
+                            <img src="assets/images/AKUNTANSI.jpg" alt="Accounting Certificate"
+                                class="w-full h-full object-cover"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="hidden text-gray-500 text-center p-4">
+                                <i class="fas fa-certificate text-6xl mb-4 opacity-90"></i>
+                                <h3 class="text-xl font-bold">Accounting Certificate</h3>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold">
+                                Finance
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Basic Accounting Competency</h3>
+                        <p class="text-gray-600 mb-4">Fundamental accounting principles and financial statement analysis
+                        </p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-sm text-gray-500">
+                                <i class="far fa-calendar mr-1"></i>
+                                Issued: 2023
+                            </span>
+                            <span class="text-sm text-gray-500">
+                                <i class="fas fa-building mr-1"></i>
+                                YADIKA Bangil
+                            </span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="assets/images/AKUNTANSI.jpg" target="_blank"
+                                class="flex-1 bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition text-sm text-center">
+                                View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 2 - Mandarin -->
+                <div class="certificate-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl">
+                    <div class="relative overflow-hidden">
+                        <div class="h-48 bg-gray-200 flex items-center justify-center certificate-image">
+                            <img src="assets/images/MANDARIN.jpg" alt="Mandarin Certificate"
+                                class="w-full h-full object-cover"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="hidden text-gray-500 text-center p-4">
+                                <i class="fas fa-language text-6xl mb-4 opacity-90"></i>
+                                <h3 class="text-xl font-bold">Mandarin Certificate</h3>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-semibold">
+                                Language
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Standard Mandarin Proficiency</h3>
+                        <p class="text-gray-600 mb-4">Basic 3 level Mandarin language certification</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-sm text-gray-500">
+                                <i class="far fa-calendar mr-1"></i>
+                                Issued: 2023
+                            </span>
+                            <span class="text-sm text-gray-500">
+                                <i class="fas fa-building mr-1"></i>
+                                SIIBT
+                            </span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="assets/images/MANDARIN.jpg" target="_blank"
+                                class="flex-1 bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition text-sm text-center">
+                                View Certificate
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Achievement 1 - Debate Competition -->
+                <div class="certificate-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl">
+                    <div class="relative overflow-hidden">
+                        <div class="h-48 bg-gray-200 flex items-center justify-center certificate-image">
+                            <img src="assets/images/DEBAT.jpg" alt="Debate Competition"
+                                class="w-full h-full object-cover"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="hidden text-gray-500 text-center p-4">
+                                <i class="fas fa-trophy text-6xl mb-4 opacity-90"></i>
+                                <h3 class="text-xl font-bold">Debate Competition</h3>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold">
+                                Achievement
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">3rd Winner - National Constitutional Debate</h3>
+                        <p class="text-gray-600 mb-4">Muhammadiyah University of Sidoarjo (UMSIDA)</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-sm text-gray-500">
+                                <i class="far fa-calendar mr-1"></i>
+                                2022
+                            </span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="assets/images/DEBAT.jpg" target="_blank"
+                                class="flex-1 bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition text-sm text-center">
+                                View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievement 2 - Video Competition -->
+                <div class="certificate-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl">
+                    <div class="relative overflow-hidden">
+                        <div class="h-48 bg-gray-200 flex items-center justify-center certificate-image">
+                            <img src="assets/images/VIDEO.jpg" alt="Video Competition"
+                                class="w-full h-full object-cover"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="hidden text-gray-500 text-center p-4">
+                                <i class="fas fa-video text-6xl mb-4 opacity-90"></i>
+                                <h3 class="text-xl font-bold">Video Competition</h3>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold">
+                                Creative
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">2nd Winner - Short Video Competition</h3>
+                        <p class="text-gray-600 mb-4">"Unity and Integrity" - Kodim 0819/Pasuruan</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-sm text-gray-500">
+                                <i class="far fa-calendar mr-1"></i>
+                                2022
+                            </span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="assets/images/VIDEO.jpg" target="_blank"
+                                class="flex-1 bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition text-sm text-center">
+                                View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Organizational Experience 1 -->
+                <div class="certificate-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl">
+                    <div class="relative overflow-hidden">
+                        <div class="h-48 bg-gray-200 flex items-center justify-center certificate-image">
+                            <img src="assets/images/FOTO.JPG" alt="HMTI Organization" class="w-full h-full object-cover"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="hidden text-gray-500 text-center p-4">
+                                <i class="fas fa-users text-6xl mb-4 opacity-90"></i>
+                                <h3 class="text-xl font-bold">HMTI Organization</h3>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs font-semibold">
+                                Leadership
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">HMTI Politeknik Negeri Malang</h3>
+                        <p class="text-gray-600 mb-4">External Department</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-sm text-gray-500">
+                                <i class="far fa-calendar mr-1"></i>
+                                2024-2025
+                            </span>
+                        </div>
+                        <div class="text-sm text-gray-600 mb-4 space-y-1">
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="assets/images/HMTI.pdf" target="_blank"
+                                class="flex-1 bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition text-sm text-center">
+                                View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Organizational Experience 2 -->
+                <div class="certificate-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl">
+                    <div class="relative overflow-hidden">
+                        <div class="h-48 bg-gray-200 flex items-center justify-center certificate-image">
+                            <img src="assets/images/IYA.jpg" alt="DudukBaca Community"
+                                class="w-full h-full object-cover"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="hidden text-gray-500 text-center p-4">
+                                <i class="fas fa-book-reader text-6xl mb-4 opacity-90"></i>
+                                <h3 class="text-xl font-bold">DudukBaca Community</h3>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-xs font-semibold">
+                                Community
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">DudukBaca Community</h3>
+                        <p class="text-gray-600 mb-4">Event & Collaboration Division</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-sm text-gray-500">
+                                <i class="far fa-calendar mr-1"></i>
+                                2022
+                            </span>
+                        </div>
+                        <div class="text-sm text-gray-600 mb-4">
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="assets/images/DUDUKBACA.jpg" target="_blank"
+                                class="flex-1 bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition text-sm text-center">
+                                View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Organizational Experience 2 -->
+                <div class="certificate-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl">
+                    <div class="relative overflow-hidden">
+                        <div class="h-48 bg-gray-200 flex items-center justify-center certificate-image">
+                            <img src="assets/images/PERMIRA.pdf" alt="DudukBaca Community"
+                                class="w-full h-full object-cover"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="hidden text-gray-500 text-center p-4">
+                                <i class="fas fa-book-reader text-6xl mb-4 opacity-90"></i>
+                                <h3 class="text-xl font-bold">PEMILIHAN RAYA POLITEKNIK NEGERI MALANG</h3>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-xs font-semibold">
+                                Community
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Coordinator of Secretariat Division</h3>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-sm text-gray-500">
+                                <i class="far fa-calendar mr-1"></i>
+                                2022
+                            </span>
+                        </div>
+                        <div class="text-sm text-gray-600 mb-4">
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="assets/images/PERMIRA.pdf" target="_blank"
+                                class="flex-1 bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition text-sm text-center">
+                                View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2024 Nazwa Nurul Wijaya. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function () {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // Close mobile menu when clicking on links
+            const mobileLinks = document.querySelectorAll('#mobile-menu a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // View certificate buttons
+            const viewButtons = document.querySelectorAll('.view-certificate');
+            viewButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const card = this.closest('.certificate-card');
+                    const title = card.querySelector('h3').textContent;
+                    alert(`Viewing details for: ${title}\n\nThis would open a detailed view or PDF of the certificate.`);
+                });
+            });
+
+            // Current year for copyright
+            const currentYear = new Date().getFullYear();
+            document.querySelector('footer p:first-child').textContent =
+                document.querySelector('footer p:first-child').textContent.replace('2024', currentYear);
+        });
+    </script>
+</body>
+
+</html>

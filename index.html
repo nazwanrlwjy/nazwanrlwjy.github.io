@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazwa Nurul Wijaya - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="font-bold text-2xl text-blue-600">Welcome to My Profile</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-blue-600 font-medium">Home</a>
+                    <a href="#about" class="hover:text-blue-600 transition">About</a>
+                    <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+                    <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
+                    <a href="portfolio.html" class="hover:text-blue-600 transition">Portfolio</a>
+                 <a href="certificates.html" target="_blank" class="hover:text-blue-600 transition">Certificates</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white px-4 pb-4">
+            <a href="#home" class="block py-2 text-blue-600 font-medium">Home</a>
+            <a href="#about" class="block py-2 hover:text-blue-600 transition">About</a>
+            <a href="#skills" class="block py-2 hover:text-blue-600 transition">Skills</a>
+            <a href="#experience" class="block py-2 hover:text-blue-600 transition">Experience</a>
+            <a href="portfolio.html" class="block py-2 hover:text-blue-600 transition">Portfolio</a>
+            <a href="#contact" class="block py-2 hover:text-blue-600 transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Updated Layout -->
+    <section id="home" class="pt-24 pb-16 bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto px-4 w-full">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Column - Text Content -->
+                <div class="order-2 lg:order-1">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+                        Hi, I'm <span class="text-blue-600">Nazwa Nurul Wijaya</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        Undergraduate Business Information Systems student at Politeknik Negeri Malang | passionate about Data Analysis, Business Intelligence, and Frontend Development
+                    </p>
+                    
+                    <!-- Action Buttons -->
+                    <div class="flex flex-wrap gap-4 mb-8">
+                        <a href="portfolio.html" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition shadow-lg font-semibold">
+                            Portfolio
+                        </a>
+                       <a href="assets/CV_NAZWA_NURUL_WIJAYA.pdf" target="_blank" class="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition font-semibold">
+                            Curriculum Vitae
+                        </a>
+                        <a href="certificates.html" class="border-2 border-gray-600 text-gray-600 px-8 py-3 rounded-lg hover:bg-gray-600 hover:text-white transition font-semibold">
+                            Certificates
+                        </a>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-map-marker-alt text-blue-500 mr-3 w-5"></i>
+                            <span>Pasuruan, East Java, Indonesia</span>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="mb-8">
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/nazwanrlwjy?tab=repositories" target="_blank" class="bg-gray-800 w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-900 transition transform hover:scale-110">
+                                <i class="fab fa-github text-white text-xl"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/nazwa-nurul-wijaya-136360224/" target="_blank" class="bg-blue-600 w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-700 transition transform hover:scale-110">
+                                <i class="fab fa-linkedin-in text-white text-xl"></i>
+                            </a>
+                            <a href="https://www.instagram.com/zwa_nrlwjy/" target="_blank" class="bg-pink-600 w-12 h-12 rounded-full flex items-center justify-center hover:bg-pink-700 transition transform hover:scale-110">
+                                <i class="fab fa-instagram text-white text-xl"></i>
+                            </a>
+                            <a href="mailto:nazwanrlwjy@gmail.com" class="bg-red-500 w-12 h-12 rounded-full flex items-center justify-center hover:bg-red-600 transition transform hover:scale-110">
+                                <i class="fas fa-envelope text-white text-xl"></i>
+                            </a>
+                            <a href="https://wa.me/62895323436622" target="_blank" class="bg-green-500 w-12 h-12 rounded-full flex items-center justify-center hover:bg-green-600 transition transform hover:scale-110">
+                                <i class="fab fa-whatsapp text-white text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Availability -->
+                    <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-green-500">
+                        <p class="text-gray-700 font-semibold">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            Available for: Internship, Freelance
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Column - Profile Photo -->
+                <div class="order-1 lg:order-2 flex justify-center lg:justify-end">
+                    <div class="relative">
+                        <!-- Placeholder untuk foto - Ganti dengan foto asli Anda -->
+                        <div class="w-80 h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-blue-400 to-purple-600 rounded-full flex items-center justify-center shadow-2xl">
+                            <!-- Ganti div ini dengan tag img untuk foto asli -->
+                            <img src="images/foto_nazwa.png" alt="Nazwa Nurul Wijaya" class="w-full h-full object-cover rounded-full"> 
+                            <!-- <div class="text-center text-white">
+                                <i class="fas fa-user text-8xl opacity-80"></i>
+                                <p class="mt-4 text-lg">Your Photo Here</p>
+                            </div> -->
+                        </div>
+                        <!-- Decorative elements -->
+                        <div class="absolute -top-4 -right-4 w-24 h-24 bg-yellow-400 rounded-full opacity-20 animate-pulse"></div>
+                        <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-pink-400 rounded-full opacity-30 animate-bounce"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+            <div class="bg-gray-50 p-8 rounded-xl shadow-sm">
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    I am a student in the Business Information Systems program at Malang State Polytechnic with a strong 
+                    interest in data analysis, business intelligence, and user interface (UI/UX) and front-end development. 
+                    I have the ability to process and analyze data using Excel, Google Sheets, Python, and R, and understand 
+                    the basics of programming with Java. Through various organizational activities and personal projects, 
+                    I continue to develop my analytical, communication, and teamwork skills to contribute to data-driven 
+                    decision-making and digital innovation.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Skills & Expertise</h2>
+            
+            <!-- Hard Skills -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold mb-6 text-blue-600">Technical Skills</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Skill Card 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-blue-500">
+                        <h4 class="font-semibold mb-3">Web Development</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Laravel</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Flutter & Dart</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">HTML/CSS</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Bootstrap</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-green-500">
+                        <h4 class="font-semibold mb-3">Database & Backend</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">MySQL</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">SQL Server</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">RESTful API</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 3 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-purple-500">
+                        <h4 class="font-semibold mb-3">Data Analysis</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Python</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">R</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Google Sheets</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Google Colab</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Microsoft Word</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Microsoft Excel</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 4 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-yellow-500">
+                        <h4 class="font-semibold mb-3">Tools & Design</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Figma</span>
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Canva</span>
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Git & GitHub</span>
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">UI/UX Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-6 text-blue-600">Soft Skills</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                        <i class="fas fa-comments text-blue-500 text-2xl mb-2"></i>
+                        <p class="font-medium">Communication</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                        <i class="fas fa-bullhorn text-green-500 text-2xl mb-2"></i>
+                        <p class="font-medium">Public Speaking</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                        <i class="fas fa-flag text-purple-500 text-2xl mb-2"></i>
+                        <p class="font-medium">Leadership</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                        <i class="fas fa-clock text-yellow-500 text-2xl mb-2"></i>
+                        <p class="font-medium">Time Management</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                        <i class="fas fa-lightbulb text-red-500 text-2xl mb-2"></i>
+                        <p class="font-medium">Problem Solving</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                        <i class="fas fa-brain text-indigo-500 text-2xl mb-2"></i>
+                        <p class="font-medium">Critical Thinking</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                        <i class="fas fa-calendar text-teal-500 text-2xl mb-2"></i>
+                        <p class="font-medium">Event Management</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Experience & Education</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Professional Experience -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-blue-600">Professional Experience</h3>
+                    
+                    <!-- Experience 1 -->
+                    <div class="mb-6 bg-gray-50 p-6 rounded-xl shadow-sm">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="font-bold text-lg">Frontend Developer & UI/UX Designer</h4>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">2025</span>
+                        </div>
+                        <p class="text-gray-600 mb-3">SIMPA-TI Project (Student Achievement Information System)</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                            <li>Developed full-stack web system for TOEIC registration</li>
+                            <li>Built admin panel using Laravel Filament</li>
+                            <li>Implemented role-based authentication and data management</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="mb-6 bg-gray-50 p-6 rounded-xl shadow-sm">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="font-bold text-lg">Data Analyst / ML Enthusiast</h4>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">2025</span>
+                        </div>
+                        <p class="text-gray-600 mb-3">Movie Rating Prediction & User Segmentation Project</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                            <li>Analyzed MovieLens 100k dataset using Python</li>
+                            <li>Built ML models (Linear Regression, SVM, Decision Tree, KNN)</li>
+                            <li>Conducted data preprocessing and feature engineering</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience 3 -->
+                    <div class="mb-6 bg-gray-50 p-6 rounded-xl shadow-sm">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="font-bold text-lg">Student Tutor</h4>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">2021-Present</span>
+                        </div>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                            <li>Taught elementary school students various subjects</li>
+                            <li>Created personalized learning materials</li>
+                            <li>Improved students' academic performance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Education & Certifications -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-blue-600">Education & Certifications</h3>
+                    
+                    <!-- Education -->
+                    <div class="mb-6 bg-gray-50 p-6 rounded-xl shadow-sm">
+                        <h4 class="font-bold text-lg mb-2">Business Information Systems (Undergraduate)</h4>
+                        <p class="text-gray-600 mb-2">Polytechnic State of Malang</p>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">2023-2027 (Expected)</span>
+                    </div>
+
+                    <div class="mb-6 bg-gray-50 p-6 rounded-xl shadow-sm">
+                        <h4 class="font-bold text-lg mb-2">Natural Science Student</h4>
+                        <p class="text-gray-600 mb-2">YADIKA Bangil High School</p>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">2020-2023</span>
+                    </div>
+
+                    <!-- Certifications -->
+                    <div id="certifications" class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                        <h4 class="font-bold text-lg mb-4">Certifications</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <i class="fas fa-certificate text-yellow-500 mr-3"></i>
+                                <span>Basic Level Accounting Competency Certificate</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-certificate text-yellow-500 mr-3"></i>
+                                <span>Standard Mandarin Proficiency Certificate (Basic 3)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Languages -->
+                    <div class="mt-6 bg-gray-50 p-6 rounded-xl shadow-sm">
+                        <h4 class="font-bold text-lg mb-4">Languages</h4>
+                        <div class="space-y-2">
+                            <div class="flex justify-between">
+                                <span>Indonesian</span>
+                                <span class="text-blue-600 font-medium">Native</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>English</span>
+                                <span class="text-blue-600 font-medium">Intermediate</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Mandarin</span>
+                                <span class="text-blue-600 font-medium">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2024 Nazwa Nurul Wijaya. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
